@@ -5,7 +5,7 @@
 
 import { logger } from './logger'
 
-const API_BASE = '/api'
+const API_BASE = import.meta.env.VITE_API_BASE_URL || '/api'
 
 /**
  * Get MIME type based on file extension
